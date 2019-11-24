@@ -10,7 +10,7 @@ import java.util.Set;
 public class Constants {
 
     /** App Version */
-    public final static String APP_VERSION = "0.0.2";
+    public final static String APP_VERSION = "0.0.3";
 
     /** Ensemble Numbers */
     public static final String[] ENSEMBLE_NUMBERS_TEXT_ARRAY = new String[] {
