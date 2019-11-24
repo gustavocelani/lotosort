@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_generator">
+
+    <fragment
+        android:id="@+id/nav_generator"
+        android:name="com.gcelani.lotosort.fragments.FragmentGenerator"
+        android:label="@string/menu_generator"
+        tools:layout="@layout/fragment_generator" />
+
+    <fragment
+        android:id="@+id/nav_ensemble"
+        android:name="com.gcelani.lotosort.fragments.FragmentEnsemble"
+        android:label="@string/menu_ensemble"
+        tools:layout="@layout/fragment_ensemble" />
+
+    <fragment
+        android:id="@+id/nav_configuration"
+        android:name="com.gcelani.lotosort.fragments.FragmentConfiguration"
+        android:label="@string/menu_configuration"
+        tools:layout="@layout/fragment_configuration" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.gcelani.lotosort.fragments.FragmentAbout"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
