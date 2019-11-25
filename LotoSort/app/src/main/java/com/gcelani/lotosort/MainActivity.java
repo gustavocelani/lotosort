@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_generator,
+                R.id.nav_subsets,
                 R.id.nav_ensemble,
                 R.id.nav_configuration,
                 R.id.nav_about)

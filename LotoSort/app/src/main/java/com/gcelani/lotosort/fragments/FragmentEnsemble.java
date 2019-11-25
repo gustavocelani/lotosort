@@ -70,7 +70,7 @@ public class FragmentEnsemble extends Fragment {
                 }
             }
 
-            Toast.makeText(mContext.get(), mContext.get().getResources().getString(R.string.ensemble_save_message, checkedCount), Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext.get(), mContext.get().getResources().getString(R.string.ensemble_save_message, checkedCount), Toast.LENGTH_LONG).show();
         }
     };
 

@@ -10,7 +10,7 @@ import java.util.Set;
 public class Constants {
 
     /** App Version */
-    public final static String APP_VERSION = "0.0.3";
+    public final static String APP_VERSION = "0.0.4";
 
     /** Ensemble Numbers */
     public static final String[] ENSEMBLE_NUMBERS_TEXT_ARRAY = new String[] {
@@ -21,6 +21,10 @@ public class Constants {
             "41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
             "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"
     };
+
+    /** Generation Types */
+    public final static int SINGLE_GENERATION_TYPE  = 0;
+    public final static int SUBSETS_GENERATION_TYPE = 1;
 
     /** Wrap Result Count Numbers */
     public final static int WRAP_COUNT = 5;

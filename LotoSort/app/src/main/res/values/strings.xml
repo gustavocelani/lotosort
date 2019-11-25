@@ -1,17 +1,28 @@
 <resources>
 
+    <!-- App Name -->
     <string name="app_name">LotoSort</string>
-    <string name="nav_header_subtitle">Bem vindo!</string>
 
     <!-- Menu -->
     <string name="menu_generator">Gerador</string>
+    <string name="menu_subsets">Sub-Conjuntos</string>
     <string name="menu_ensemble">Conjunto</string>
     <string name="menu_configuration">Configurações</string>
     <string name="menu_about">Sobre</string>
 
+    <!-- Messages -->
+    <string name="nav_header_subtitle">Bem vindo!</string>
+    <string name="generating_text">Gerando…</string>
+    <string name="time_warning_text">Gerando…\n\nPor favor aguarde…</string>
+
     <!-- Generator Sector -->
     <string name="generate_button_text">Gerar Nova Combinação</string>
-    <string name="generate_fail_text">Inválido...</string>
+    <string name="generate_fail_text">Configurações Inválidas</string>
+
+    <!-- Subsets Section -->
+    <string name="subsets_hint_text">Gere todas as combinações possíveis para o conjunto selecionado</string>
+    <string name="subsets_generate_button_text">Gerar Sub-Conjuntos</string>
+    <string name="subsets_generate_message">%d sub-conjuntos gerados</string>
 
     <!-- Ensemble Section -->
     <string name="ensemble_hint_text">Escolha os numeros que poderão ser sorteados no momento da geração do seu jogo</string>

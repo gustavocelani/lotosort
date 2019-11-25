@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.gcelani.lotosort.R;
-import com.gcelani.lotosort.control.GeneratorController;
+import com.gcelani.lotosort.tasks.SingleGeneratorAsyncTask;
 
 import java.lang.ref.WeakReference;
 
@@ -40,10 +40,7 @@ public class FragmentGenerator extends Fragment {
 
         Button generateButton = rootView.findViewById(R.id.generate_button);
         generateButton.setOnClickListener(onGenerateButtonClickListener);
-
-        GeneratorController generatorController = new GeneratorController(mContext.get());
-        String generation = generatorController.generateAndFormat();
-        mResultTextView.setText(generation.isEmpty() ? mContext.get().getResources().getString(R.string.generate_fail_text): generation);
+        generateButton.performClick();
 
         return rootView;
     }
@@ -69,9 +66,8 @@ public class FragmentGenerator extends Fragment {
          */
         @Override
         public void onClick(View v) {
-            GeneratorController generatorController = new GeneratorController(mContext.get());
-            String generation = generatorController.generateAndFormat();
-            mResultTextView.setText(generation.isEmpty() ? mContext.get().getResources().getString(R.string.generate_fail_text): generation);
+            SingleGeneratorAsyncTask singleGeneratorAsyncTask = new SingleGeneratorAsyncTask(mContext.get(), mResultTextView);
+            singleGeneratorAsyncTask.execute();
         }
     };
 }

@@ -12,6 +12,10 @@
             android:icon="@drawable/ic_menu_generator"
             android:title="@string/menu_generator" />
         <item
+            android:id="@+id/nav_subsets"
+            android:icon="@drawable/ic_menu_subsets"
+            android:title="@string/menu_subsets" />
+        <item
             android:id="@+id/nav_ensemble"
             android:icon="@drawable/ic_menu_ensemble"
             android:title="@string/menu_ensemble" />
